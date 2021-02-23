@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="page2.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 offset-md-3 table">
+                    <h1>Fill the necessary details</h1>
+                    <p>check once before submitting*</p>
+                    <table class="table-dark">
+                        <thead>
+                            <th scope="col"><label>FIRST NAME : </label></th>
+                            <th scope="col"><input type="text"></th>
+                        </thead>
+                        <thead>
+                            <th scope="col"><label>LAST NAME : </label></th>
+                            <th scope="col"><input type="text"></th>
+                        </thead>
+                        
+                        <thead>
+                            <th scope="col"><label>CONTACT NUMBER : </label></th>
+                            <th scope="col"><input type="tel"></th>
+                        </thead>
+                        <thead>
+                            <th scope="col"><label>EMAIL ADDRESS : </label></th>
+                            <th scope="col"><input type="text"></th>
+                        </thead>
+                        <thead>
+                            <th scope="col"><label>PERMANENT ADDRESS : </label></th>
+                            <th scope="col"><input type="text"></th>
+                        </thead>
+                        <thead>
+                            <th scope="col"><label>PHOTOGRAPH of BOY/GIRL : </label></th>
+                            <th scope="col"><input type="file"></th>
+                        </thead>
+                        
+                        <thead>
+                            <th scope="col"><label>SELECT CITY : </label></th>
+                            <th scope="col"><div class="btn-group">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  CITY
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Mumbai</a>
+                                  <a class="dropdown-item" href="#">Pune</a>
+                                  <a class="dropdown-item" href="#">Delhi</a>
+                                  <a class="dropdown-item" href="#">Bangalore</a>
+                                  <a class="dropdown-item" href="#">Jaipur</a>
+                                  <div class="dropdown-divider"></div>
+                                </div>
+                              </div></th>
+                        </thead>
+                        <thread>
+                            <th scope="col"><label>AGE : </label></th>
+                            <th scope="col"><input type="number"></th>
+                        </thread>
+                    </table>
+
+                    <button class="end" onclick="really()">SUBMIT</button>
+                  </div>
+              </div>
+          </div>
+
+          <script>
+              
+
+              function really()
+              {
+                  var txt="";
+                  if(confirm("Have you checked all the details? if yes, please click on OK button to continue"))
+                  {
+                      txt= "successfully registered, Our team member will contact to you soon!";
+                      showAlert(txt);
+                      window.location.href= "index.html";
+                  }
+                  else
+                  {
+                      txt = "you denied the permission of submission";
+                      showAlert(txt);
+                  }
+              }
+
+              function showAlert(text)
+              {
+                 alert(text);
+              }
+          </script>
+    </body>
+</html>

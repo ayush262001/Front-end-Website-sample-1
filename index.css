@@ -1,0 +1,374 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', Times New Roman, Times, serif;
+}
+
+#services
+{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header{ 
+    background-color: #ffffff; color: black; font-weight: bold; height: 60px; width: 100%;
+    border-bottom: 2px solid black; position: fixed;
+    margin-top: -60px;
+    z-index: 99999;
+}
+
+
+
+#navList
+{
+    list-style-type: none;
+    color: #000000;
+    line-height: 60px;
+    width: fit-content;
+    float: right;
+    margin-right: 20px;
+}
+
+#navList li
+{
+    display: inline-block; margin-left: 30px; height: 60px; padding-left: 15px; padding-right: 15px;
+}
+
+#firstNavItem
+{
+    margin-left: 0px;
+}
+
+#navList li a{
+   text-decoration: none; display: inline; color: black;
+}
+
+#navList .active a{
+    color: white;
+}
+
+#navList li a:hover{
+    text-decoration: none;
+}
+
+#menu {
+    display: block;
+    cursor: pointer;
+    visibility: collapse;
+    display: none;
+    align-items: center;
+    margin-right: 5px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  li:hover{
+      cursor: pointer;
+  }
+
+  .active
+  {
+      background-color: black;
+      color: #ffffff;
+  }
+  #headerSection
+  {
+      height: 600px;
+      width: 100%;
+      background-image: url("event.jfif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-top: 60px;
+  }
+
+ #bot
+ {
+    position: absolute;     
+    bottom: 0;
+    width: 100%;
+ } 
+
+
+
+  #cardHead
+  {
+     display: block;
+    }
+
+  #cardHead
+  {
+      background-color: unset;
+      background: none;
+      color: #ffffff;
+      text-shadow: 2px 2px black;
+  }
+
+  button{
+      
+      padding: 5px;
+      justify-content: space-around;
+      border: 2px solid rgb(255, 1, 107);
+      color: rgb(255, 1, 107);
+      background: none;
+      font-weight: bolder;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      
+  }
+
+  .buttonHead{
+      border-radius: 100px;
+      box-shadow: 2px 2px 3px rgb(255, 1, 107);
+      margin: 5px;
+  }
+
+  #about
+  {
+      margin-top: 10px; margin-bottom: 10px;
+  }
+
+  #about
+  {
+      color: white;
+  }
+
+  #about .row div
+  {
+      width: fit-content;
+      background-color: #000000;
+      padding: 5px;
+  }
+
+  #about h3{
+      margin-left: -10px;
+      border-bottom: 2px solid rgb(255, 3, 108);
+  }
+
+  #about h3 span{
+      font-size: 50px;
+      color: #ffffff;
+      margin-left: -30px;
+  }
+
+  #about img{
+      width: 100%;
+      height: 100%;
+  }
+
+  #wedding img, #ring img, #birthday img{
+      width: 85%;
+      height: 70%;
+      display: block;
+      margin: auto;
+  }
+
+  #wedding p, #ring p, #birthday p
+  {
+      width: 80%;
+      display: inline-block;
+      margin: auto;
+      margin-top: 20px;
+  }
+
+  #wedding h3, #ring h3, #birthday h3{
+      border-bottom: 3px solid rgb(255, 0, 55);
+      width: 40%;
+  }
+
+  #wedding h3 span, #ring h3 span, #birthday h3 span
+  {
+      font-size: 70px;
+  }
+   .bookNow
+   {
+       display: block;
+       width: 150px;
+       padding: 5px;
+       border-radius: 150px;
+       margin-top: 30px;
+   }
+
+   #content h3, #content p
+   {
+       float: right;
+   }
+
+   #content .bookNow
+   {
+       float: right;
+   }
+  
+   #ring
+   {
+       margin-top: 30px;
+   }
+
+   #birthday
+   {
+       margin-top: 130px;
+   }
+
+   footer
+   {
+       padding: 10px;
+       background-color: rgba(0, 0, 0, 0.774);
+       margin-top: 20px;
+   }
+
+   footer h6{
+       color: white;
+       font-size: 20px;
+       border-bottom: 2px solid rgb(255, 0, 106);
+
+   }
+   footer p{
+       color: #ffffff;
+
+   }
+
+   #row1
+   {
+       margin-bottom: 20px;
+   }
+
+   #logo
+   {
+       width: 170px;
+       height: auto;
+       border-radius: 50%;
+       margin-bottom: 20px;
+       display: block;margin: auto; 
+       margin-top: 10px; 
+    }
+
+    #logos
+    {
+        width: fit-content;
+        margin-left: 5px;
+    }
+
+   #logos img
+   {
+       width: 30px;
+       height: 30px;
+       display: block;
+       float: right;
+   }
+  
+
+  @media(max-width:768px)
+  {
+      body{
+          margin: 0px;
+          padding: 0px;
+      }
+      #menu
+      {
+          visibility: visible;
+          display: block;
+          line-height: 100%;
+          float: right;
+      }
+
+      header ul
+      {
+          visibility: collapse;
+          display: none;
+      }
+
+      header{
+          height: 40px;
+          margin-top: -40px;
+      }
+      #headerSection
+      {
+          height: 500px;
+          margin-top: 40px;
+      }
+
+      #about h3
+      {
+          margin-left: 5px;
+      }
+      #about h3 span{
+        margin-left: 3px;
+    }
+
+    
+  #wedding img, #ring img{
+    width: 100%;
+    height: 80%;
+    display: block;
+    margin: auto;
+}
+
+#wedding p, #ring p
+{
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#wedding h3, #ring h3{
+    border-bottom: 3px solid rgb(255, 0, 55);
+    width: 40%;
+}
+
+#wedding h3 span, #ring h3 span
+{
+    font-size: 70px;
+}
+ .bookNow
+ {
+     display: block;
+     width: 150px;
+     padding: 5px;
+     border-radius: 150px;
+     margin-top: 30px;
+ }
+  }
+
+
+
+  @media(max-width: 576px)
+  {
+      
+   #content h3, #content p
+   {
+       float: left;
+   }
+
+   #content .bookNow
+   {
+       float: left;
+   }
+  }

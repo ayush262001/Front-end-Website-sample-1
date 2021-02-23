@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <title>Noorkhan Event Management</title>
+         <meta charset="UTF-8">
+	     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="index.css" type="text/css">
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     </head>
+
+     <body>
+         <header>
+              <div id="menu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+               <ul id="navList">
+                   <li class="active" id="one" onclick="changeBackOne()">ABOUT</li>
+                   <li class="unactive" id="two" onclick="changeBackTwo()">SERVICES</li>
+                   <li class="unactive" id="three" onclick="changeBackThree()">CONTACTS</li>
+               </ul>
+              </header>
+
+         <div class="container-fluid" id="headerSection">
+                <div class="row" id="bot">
+                  <div class="col-md-6">
+                    <div class="card" id="cardHead">
+                      <h4 class="card-header">
+                           You want us to manage your event?
+                      </h4>
+                      <p class="card-body">Then click on the button given below</p>
+                      <div class="card-footer">
+                        <button class="buttonHead" onclick="toWedding()">MARRIEGE EVENT</button>
+                        <button class="buttonHead" onclick="toRing()">RING CEREMONY</button>
+                        <button class="buttonHead" onclick="toBirthday()">BIRTHDAY PARTY</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+         </div>
+         <div class="container-fluid" id="about">
+           <div class="row">
+                 <div class="offset-md-2 col-md-4 offset-sm-1 col-sm-5 col-10 offset-1">
+                   <img src="event2.jpeg">
+                 </div>
+                 <div class="col-md-4 offset-md-0 col-sm-5 offset-sm-0 col-10 offset-1">
+                       <h3><span>N</span>oor Khan Event Management</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam amet voluptatem voluptas accusamus vero quae nobis ut exercitationem voluptate odio eos, quia doloremque ipsa, delectus, beatae necessitatibus architecto quidem ad!</p>
+                 </div>
+            </div>
+         </div>
+  
+         <h1 id="services">SERVICES</h1>
+
+         <div class="container-fluid" id="wedding">
+           <div class="row">
+             <div class="col-sm-4 offset-sm-1 order-first align-items-center">
+                  <img src="soul.jpg">
+             </div>
+             <div class="col-sm-7 align-items-center">
+                  <h3><span>W</span>EDDING</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ipsa, rerum quas doloremque, earum, aliquid repudiandae obcaecati eveniet error repellendus nemo cum a. Placeat necessitatibus quia expedita ipsa architecto in dolorem earum quos, debitis incidunt repellat amet dolor, porro voluptatibus reiciendis commodi, atque consectetur obcaecati ipsam exercitationem sed quae aperiam? Natus ipsum ad nemo velit. Laudantium similique veniam dolorum?</p>  
+                  <button class="bookNow" onclick="goToWeddingForm()">BOOK NOW</button>     
+            </div>
+           </div>
+         </div>
+
+         <div class="container-fluid" id="ring">
+          <div class="row">
+            
+            <div class="col-sm-7 align-items-center" id="content">
+                 <h3><span>R</span>ING CEREMONY</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ipsa, rerum quas doloremque, earum, aliquid repudiandae obcaecati eveniet error repellendus nemo cum a. Placeat necessitatibus quia expedita ipsa architecto in dolorem earum quos, debitis incidunt repellat amet dolor, porro voluptatibus reiciendis commodi, atque consectetur obcaecati ipsam exercitationem sed quae aperiam? Natus ipsum ad nemo velit. Laudantium similique veniam dolorum?</p>  
+                 <button class="bookNow" onclick="goToRingForm()">BOOK NOW</button>     
+           </div>
+           <div class="col-sm-4 offset-sm-1 order-sm-last order-first align-items-center">
+            <img src="ring.jpg">
+       </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid" id="birthday">
+          <div class="row">
+            <div class="col-sm-4 offset-sm-1 order-first align-items-center">
+                 <img src="birth.jpg">
+            </div>
+            <div class="col-sm-7 align-items-center">
+                 <h3><span>B</span>IRTHDAY PARTY</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat ipsa, rerum quas doloremque, earum, aliquid repudiandae obcaecati eveniet error repellendus nemo cum a. Placeat necessitatibus quia expedita ipsa architecto in dolorem earum quos, debitis incidunt repellat amet dolor, porro voluptatibus reiciendis commodi, atque consectetur obcaecati ipsam exercitationem sed quae aperiam? Natus ipsum ad nemo velit. Laudantium similique veniam dolorum?</p>  
+                 <button class="bookNow" onclick="goToBirthForm()">BOOK NOW</button>     
+           </div>
+          </div>
+        </div>
+
+        <footer id="contact">
+             <div class="row" id="row1">
+               <div class="col-md-8">
+                 <div class="row">
+                  <div class="col-md-4 col-6">
+                    <h6>SOCIAL MEDIA</h6>
+                    <p>INSTAGRAM</p>
+                    <p>FACEBOOK</p>
+                    <p>LINKEDIN</p>
+                    <p>TWITTER</p>
+                   </div>
+  
+                   <div class="col-md-4 col-6">
+                    <h6>OTHER LINKS</h6>
+                    <p>GITHUB</p>
+                    <p>YOUTUBE</p>
+                    <p>BLOG</p>
+                   </div>
+                 </div>
+               </div>
+               
+               <div class="col-md-4">
+                <img src="logo.png" id="logo">
+              </div>
+
+             </div>
+
+             <div class="row" id="logos">
+              <div class="col-2">
+                <img src="insta.png">
+              </div>
+              <div class="col-2">
+               <img src="facebook.png">
+             </div>
+             <div class="col-2">
+               <img src="linkedin.png">
+             </div>
+             <div class="col-2">
+               <img src="twitter.png">
+             </div>
+            </div>
+
+             
+        </footer>
+
+
+
+
+
+
+
+
+
+
+         <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+
+              function changeBackOne()
+              {
+                document.getElementById('one').className='active';
+                document.getElementById('two').className='unactive';
+                document.getElementById('three').className='unactive';
+                
+                document.getElementById('about').scrollIntoView();
+              }
+              function changeBackTwo()
+              {
+                document.getElementById('one').className='unactive';
+                document.getElementById('two').className='active';
+                document.getElementById('three').className='unactive'; 
+                
+                document.getElementById('services').scrollIntoView();
+              }
+              function changeBackThree()
+              {
+                document.getElementById('one').className='unactive';
+                document.getElementById('two').className='unactive';
+                document.getElementById('three').className='active'; 
+
+                document.getElementById('contact').scrollIntoView();
+              }
+
+              function toBirthday()
+              {
+                  var element = document.getElementById('birthday');
+                  element.scrollIntoView(false);
+              }
+              function toRing()
+              {
+                  var element = document.getElementById('ring');
+                  element.scrollIntoView(false);
+              }
+              function toWedding()
+              {
+                  var element = document.getElementById('wedding');
+                  element.scrollIntoView(false);
+              }
+
+              function goToWeddingForm()
+              {
+                window.location.href = "weddingForm.html";
+              }
+
+              function goToRingForm()
+              {
+                window.location.href = "ringForm.html";
+              }
+
+              function goToBirthForm()
+              {
+                window.location.href = "birthForm.html";
+              }
+            
+            </script>
+     </body>
+
+
+</html>
